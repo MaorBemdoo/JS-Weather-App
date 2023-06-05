@@ -160,6 +160,7 @@ body {
 .container .other-contents > div > div p {
   position: relative;
   top: 10px;
+  font-size: 1.5rem;
 }
 
 @media (width <= 331px) {
