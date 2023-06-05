@@ -112,7 +112,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.container .temp i {
+.container .temp > i {
   font-size: 4rem;
   color: yellow;
 }
@@ -126,6 +126,13 @@ body {
 }
 .container .temp div:hover {
   cursor: pointer;
+}
+.container .temp div:last-child {
+  display: flex;
+  font-size: 1.5rem;
+}
+.container .temp div:last-child i {
+  margin-right: 0.2em;
 }
 
 .container .other-contents {
