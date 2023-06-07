@@ -9,6 +9,7 @@ let windSpeedScale = document.querySelector(".other-contents div:last-child div 
 let humidity = document.querySelector(".other-contents div div p")
 let form = document.getElementsByTagName("form")[0]
 let formSearch = document.querySelector("form input")
+let weatherIcon = document.getElementById("weather-icon")
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
@@ -29,10 +30,9 @@ form.addEventListener("submit", (e) => {
         temp.innerHTML = jsonWeatherData.main.temp
         windSpeed.innerHTML = jsonWeatherData.wind.speed
         humidity.innerHTML = jsonWeatherData.main.humidity
-        return jsonWeatherData
+        // return jsonWeatherData
     }
     getWeatherData()
-
     const tempConversion = () => {
         let tempValue = Number.parseInt(temp.getInnerHTML())
         const tempF = (1.8*tempValue) + 32
