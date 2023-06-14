@@ -112,7 +112,11 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.container .temp > i {
+.container .temp img {
+  height: 100px;
+  width: 100px;
+}
+.container .temp div:first-child i {
   font-size: 4rem;
   color: yellow;
 }
