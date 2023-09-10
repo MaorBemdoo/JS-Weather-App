@@ -26,7 +26,7 @@ form.addEventListener("submit", (e) => {
 	// } else{
 	//     loc.innerHTML = formSearch.value
 	// }
-	location.search = `location=${formSearch.value}`;
+	// location.search = `location=${formSearch.value}`;
 	loc.innerHTML = formSearch.value || location.search.slice(10);
 	formSearch.value = "";
 	console.log("Hello");
